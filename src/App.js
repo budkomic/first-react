@@ -1,6 +1,6 @@
-import Hero from './components/Hero/Hero.js';
-import SearchForm from './components/SearchForm/SearchForm.js';
-import List from './components/List/List.js';
+import Hero from './Components/Hero/Hero.js';
+import SearchForm from './Components/SearchForm/SearchForm.js';
+import List from './Components/List/List.js';
 
 const App = () => {
   return (
