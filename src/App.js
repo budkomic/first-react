@@ -1,14 +1,15 @@
-import Hero from './Components/Hero/Hero.js';
-import SearchForm from './Components/SearchForm/SearchForm.js';
-import List from './Components/List/List.js';
+import Hero from './Components/Hero/Hero'
+import SearchForm from './Components/SearchForm/SearchForm'
+import List from './Components/List/List'
+import Container from './Components/Container/Container';
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <Hero />
       <SearchForm />
       <List />
-    </div>
+    </Container>
   );
 };
 
