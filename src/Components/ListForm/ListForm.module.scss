@@ -1,6 +1,6 @@
 @import '../../styles/settings.scss';
 
-.columnForm {
+.listForm {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -8,8 +8,11 @@
 }
 
 @media (max-width: 767px) {
-    .columnForm {
+    .listForm {
       width: 100%;
       margin: 0 0 $base-size 0;
     }
 }
+
+
+

@@ -1,9 +1,22 @@
-import { createStore } from 'redux';
 import initialState from './initialState';
+import { createStore, combineReducers } from 'redux';
+import listsReducer from './listsRedux';
+import columnsReducer from './columnsRedux';
+import cardsReducer from './cardsRedux';
+import searchStringReducer from './searchStringRedux';
 
-const reducer = (state, action) => {
-  return state;
-};
+
+// reducers
+
+const subreducers = {
+  lists: listsReducer,
+  columns: columnsReducer,
+  cards: cardsReducer,
+  searchString: searchStringReducer
+}
+
+const reducer = combineReducers(subreducers);
+
 
 const store = createStore(
   reducer,
